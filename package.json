@@ -26,12 +26,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FSantiago1987/Comp229_Ass_1_Porfolio.git"
+    "url": "git+https://github.com/FSantiago1987/Comp229_Ass_1_Portfolio.git"
   },
   "author": "Fabio Luiz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FSantiago1987/Comp229_Ass_1_Porfolio"
+    "url": "https://github.com/FSantiago1987/Comp229_Ass_1_Portfolio"
   },
-  "homepage": "https://github.com/FSantiago1987/Comp229_Ass_1_Porfolio#readme"
+  "homepage": "https://github.com/FSantiago1987/Comp229_Ass_1_Portfolio#readme"
 }
