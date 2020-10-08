@@ -1,0 +1,35 @@
+/* 
+    app.css
+    Made by Fabio Luiz
+    Student # 301077364
+    2020, Oct 08
+ */
+
+/* Background Image HomePage */
+.bgimg {
+    position: relative;
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/assets/images/background_home_page.PNG");
+    height: 100%; 
+    min-height: 950px;
+}
+
+/* Background Image Jumbotron HomePage */
+.jumbotron_hp {
+    background-image: url("/assets/images/bkgd_hp.jpg");
+    background-size:contain;
+    min-height: 900px;
+    opacity: 0.95;
+}
+
+/* Jumbotron Min-Height About Page */
+.about_pg {
+    min-height: 900px;
+}
+
+.contact_pg {
+    min-height: 800px;
+}

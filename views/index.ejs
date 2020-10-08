@@ -1,0 +1,23 @@
+<!-- Include Defatul HTML Header -->
+<%- include partials/header.ejs %>
+<!-- Include Default Html Navigation Menu -->
+<%- include partials/main_nav.ejs %>
+
+  <!-- Main Content Conditions -->
+  <% if(title == "Home"){ %>
+  <%- include partials/home_content.ejs %>
+  <% } else if(title == "About") { %>  
+  <%- include partials/about_content.ejs %>
+  <% } else if(title == "Projects") { %>
+  <%- include partials/projects_content.ejs %>
+  <% } else if(title == "Services") { %>
+  <%- include partials/services_content.ejs %>
+  <% } else if(title == "Contact Us") { %> 
+  <%- include partials/contact_content.ejs %>
+  <% }  %>       
+
+<!-- Include Defatul HTML Bottom -->
+<%- include partials/bottom_nav.ejs %>
+<!-- Include Defatul Footer -->
+<%- include partials/footer.ejs %>
+
