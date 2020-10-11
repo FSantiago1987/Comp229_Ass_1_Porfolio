@@ -1,5 +1,7 @@
+var fs = require('fs');
 var express = require('express');
 var router = express.Router();
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -15,6 +17,15 @@ router.get('/home', function(req, res, next) {
 /* GET About page. */
 router.get('/about', function(req, res, next) {
   res.render('index', { title: 'About' });
+});
+
+/* GET Resume. */
+router.get('/resume', function(req, res) {
+  var tempFile = '/assets/pdf/resume.pdf';
+  fs.readFile(tempFile, function(err, data){
+    res.contentType('application/pdf');
+    res.send(data);
+  });
 });
 
 /* GET Products page. */
