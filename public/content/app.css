@@ -15,6 +15,7 @@
     background-image: url("/assets/images/back_hp.jpg");
     height: 100%; 
     min-height: 950px;
+    max-height: 950px;
 }
 
 /* Background Image Jumbotron HomePage */
@@ -22,14 +23,17 @@
     background-image: url("/assets/images/bkgd_hp.jpg");
     background-size:contain;
     min-height: 900px;
+    max-height: 900px;
     opacity: 0.95;
 }
 
 /* Jumbotron Min-Height About Page */
 .about_pg {
     min-height: 900px;
+    max-height: 900px;
 }
 
 .contact_pg {
     min-height: 800px;
+    max-height: 800px;
 }

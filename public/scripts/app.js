@@ -47,6 +47,7 @@ TxtType.prototype.tick = function(){
         delta = this.period;
         this.isDeleting = true;
     } else if(this.isDeleting && this.txt === ''){
+        this.el.innerHTML = '<span class="wrap">'+'<br>'+'</span>';
         this.isDeleting = false;
         this.loopNum++;
         delta = 500;
