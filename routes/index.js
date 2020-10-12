@@ -19,14 +19,7 @@ router.get('/about', function(req, res, next) {
   res.render('index', { title: 'About' });
 });
 
-/* GET Resume. */
-router.get('/resume', function(req, res) {
-  var tempFile = '/assets/pdf/resume.pdf';
-  fs.readFile(tempFile, function(err, data){
-    res.contentType('application/pdf');
-    res.send(data);
-  });
-});
+
 
 /* GET Products page. */
 router.get('/projects', function(req, res, next) {
