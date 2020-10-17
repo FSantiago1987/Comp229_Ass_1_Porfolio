@@ -5,11 +5,26 @@
     2020, Oct 08
  */
 
+
+
 (function(){
 
     function Start()
     {
         console.log("App Started...");
+
+        let deleteBtn = document.querySelectorAll('.btn-danger');
+
+        for(button of deleteBtn)
+        {
+            button.addEventListener('click', (event)=>{
+                if(!confirm("Are you sure?"))
+                {
+                    event.preventDefault();
+                    window.location.assign('/book-list');
+                }
+            });
+        }
     }
 
     window.addEventListener("load", Start);

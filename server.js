@@ -4,7 +4,9 @@
  * Module dependencies.
  */
 
-var app = require('./app');
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+
+var app = require('./server/config/app');
 var debug = require('debug')('assignment1:server');
 var http = require('http');
 
