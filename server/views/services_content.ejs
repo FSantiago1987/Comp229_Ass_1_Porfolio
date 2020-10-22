@@ -1,9 +1,14 @@
+ <!-- Include Defatul HTML Header -->
+<%- include partials/header.ejs %>
+<!-- Include Default Html Navigation Menu -->
+<%- include partials/main_nav.ejs %>
+ 
     <!-- Service Page Content -->
-    <main class="jumbotron text-center container">
-        <h1 class="jumbotron-heading">Services</h1>
-    </main>
-    <div class="album py-5 bg-light">
-        <div class="container">
+    <div class="container">
+        <main class="jumbotron text-center">
+            <h1 class="jumbotron-heading">Services</h1>
+        </main>
+        <div class="album py-5 bg-light jumbotron_pp">
             <div class="row">
                 <!-- Service 1 -->
                 <div class="col-md-4">
@@ -26,7 +31,7 @@
                         <img class="card-img-top" src="/assets/images/service2.jpg" alt="Service 2" style="height: 200px; padding: 0 auto">
                         <div class="card-body">
                             <h5 class="mb-0">General Programming</h5><br>
-                            <p class="card-text text-justify">We offer services in any language to complete your project and turn your dream into reality.</p><br>
+                            <p class="card-text text-justify">We offer services in any language to complete your project and turn your dream into reality.</p><br><br>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <p><a class="btn btn-sm btn-outline-secondary" href="/contact" role="button">Contact Us</a></p>
@@ -41,7 +46,7 @@
                         <img class="card-img-top" src="/assets/images/service3.jpg" alt="Service 3" style="height: 200px; padding: 0 auto">
                         <div class="card-body">
                             <h5 class="mb-0">Mobile Apps</h5><br>
-                            <p class="card-text text-justify">We will help you create practical and seamless experiences on any device and get the best of mobile technology for your business.</p>
+                            <p class="card-text text-justify">We will help you create practical and seamless experiences on any device and get the best of mobile technology for your business.</p><br>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <p><a class="btn btn-sm btn-outline-secondary" href="/contact" role="button">Contact Us</a></p>
@@ -53,3 +58,8 @@
             </div>
         </div>
     </div>
+
+<!-- Include Defatul HTML Bottom -->
+<%- include partials/bottom_nav.ejs %>
+<!-- Include Defatul Footer -->
+<%- include partials/footer.ejs %>

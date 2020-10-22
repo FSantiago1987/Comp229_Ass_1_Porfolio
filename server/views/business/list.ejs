@@ -1,0 +1,63 @@
+<!-- Include Defatul HTML Header -->
+<%- include ../partials/header.ejs %>
+<!-- Include Default Html Navigation Menu -->
+<%- include ../partials/main_nav.ejs %>
+
+  <!-- Main Content Conditions -->
+    <main class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-8">
+                <h1><%= title %></h1>
+
+                <% if(typeof displayName == 'string' && displayName){ %>                
+                <a href="/business-list/add" class="btn btn-primary" role="button">
+                    <i class="fas fa-plus-circle"></i>Add User</a>
+                <% } %>
+                <br>
+                <table class="table table-bordered table-striped table-hover">
+                    <!-- Header Row -->
+                    <tr class="d-flex">
+                    <% if(typeof displayName == 'string' && displayName){ %>
+                        <th class="text-center col-3">Name</th>
+                        <th class="text-center col-2">Phone Number</th>
+                        <th class="text-center col-5">Email</th>                     
+                        <th class="text-center col-1">Edit</th>
+                        <th class="text-center col-1">Delete</th>
+                    <% } else { %>
+                        <th class="text-center col-4">Name</th>
+                        <th class="text-center col-3">Phone Number</th>
+                        <th class="text-center col-5">Email</th>
+                    <% } %>
+                    </tr>
+
+                    <!-- REpeatable Template Row -->
+                    <% for(let count = 0; count < BusinessList.length; count++) { %>
+                        <tr class="d-flex">
+                        <% if(typeof displayName == 'string' && displayName){ %>
+                            <td class="text-center col-3"><%= BusinessList[count].name %></td>
+                            <td class="text-center col-2"><%= BusinessList[count].phoneNumber %></td>
+                            <td class="text-center col-5"><%= BusinessList[count].email %></td>
+                            <td class="text-center col-1">
+                                <a href="/business-list/edit/<%= BusinessList[count]._id %>" class="btn btn-sm">
+                                <i class="fas fa-edit"></i></a>
+                            </td>
+                            <td class="text-center col-1">
+                                <a href="/business-list/delete/<%= BusinessList[count]._id %>" class="btn red danger btn-sm">
+                                <i class="fas fa-trash"></i></a>
+                            </td>
+                        <% } else { %>  
+                            <td class="text-center col-4"><%= BusinessList[count].name %></td>
+                            <td class="text-center col-3"><%= BusinessList[count].phoneNumber %></td>
+                            <td class="text-center col-5"><%= BusinessList[count].email %></td>                                
+                        <% } %>
+                        </tr>
+                    <% } %>
+                </table>
+            </div>
+        </div>
+    </main>     
+
+<!-- Include Defatul HTML Bottom -->
+<%- include ../partials/bottom_nav.ejs %>
+<!-- Include Defatul Footer -->
+<%- include ../partials/footer.ejs %>

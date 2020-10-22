@@ -1,10 +1,32 @@
+ <!-- Include Defatul HTML Header -->
+<%- include partials/header.ejs %>
+<!-- Include Default Html Navigation Menu -->
+<%- include partials/main_nav.ejs %>
+ 
     <!-- Projects Page Content -->
-      <main class="jumbotron text-center container">
-          <h1 class="jumbotron-heading">Projects</h1>
-      </main>
+    <div class="container">
+        <main class="jumbotron text-center">
+            <h1 class="jumbotron-heading">Projects</h1>
+        </main>
+    </div>
+      <div class="container">
+        <div class="carousel carousel-slider center">
+            <div class="carousel-fixed-item center">
+            </div>
+            <div class="carousel-item red white-text pj1" href="#one!">
+            <h3 class="caption left-align">Los Caballeros Restaurant Website</h3>
+            </div>
+            <div class="carousel-item amber white-text pj2" href="#two!">
+            <h3 class="caption left-align">Car Sharing SRS</h3>
+            </div>
+            <div class="carousel-item green white-text pj3" href="#three!">
+            <h3 class="caption left-align">DIT Wereable Device</h3>
+            </div>
+        </div>
+      </div>
       <div class="container">
         <!-- Projects 1 -->
-        <div class="inner cover">
+        <div class="inner cover jumbotron_pp">
             <div class="cover-heading jumbotron">
                 <div class="card flex-md-row mb-4 box-shadow h-md-250">
                     <div class="card-body d-flex flex-column align-items-start">
@@ -53,3 +75,7 @@
             </div>
         </div>
 
+<!-- Include Defatul HTML Bottom -->
+<%- include partials/bottom_nav.ejs %>
+<!-- Include Defatul Footer -->
+<%- include partials/footer.ejs %>

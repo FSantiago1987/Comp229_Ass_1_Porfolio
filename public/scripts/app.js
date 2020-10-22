@@ -13,7 +13,7 @@
     {
         console.log("App Started...");
 
-        let deleteBtn = document.querySelectorAll('.btn-danger');
+        let deleteBtn = document.querySelectorAll('.danger');
 
         for(button of deleteBtn)
         {
@@ -21,7 +21,7 @@
                 if(!confirm("Are you sure?"))
                 {
                     event.preventDefault();
-                    window.location.assign('/book-list');
+                    window.location.assign('/business-list');
                 }
             });
         }

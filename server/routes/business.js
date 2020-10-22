@@ -4,7 +4,7 @@ let mongoose = require('mongoose');
 
 let passport = require('passport');
 
-let bookController = require('../controllers/book');
+let listController = require('../controllers/business');
 
 //helper function for guard
 function requireAuth(req, res, next)
@@ -17,22 +17,22 @@ function requireAuth(req, res, next)
     next();
 }
 
-/* GET Route for the Book List page */
-router.get('/', bookController.displayBookList);
+/* GET Route for the Business List page */
+router.get('/', listController.displayBusinessList);
 
 /* GET Route for displaying the Add Page page - CREATE operation */
-router.get('/add', requireAuth, bookController.displayAddPage);
+router.get('/add', requireAuth, listController.displayAddPage);
 
 /* POST Route for processing the Add Page page - CREATE operation */
-router.post('/add', requireAuth, bookController.processAddPage);
+router.post('/add', requireAuth, listController.processAddPage);
 
 /* GET Route for displaying the Edit Page page - UPDATE operation */
-router.get('/edit/:id', requireAuth, bookController.displayEditPage);
+router.get('/edit/:id', requireAuth, listController.displayEditPage);
 
 /* POST Route for processing the Edit Page page - UPDATE operation */
-router.post('/edit/:id', requireAuth, bookController.processEditPage);
+router.post('/edit/:id', requireAuth, listController.processEditPage);
 
 /* GET Route for detetion - UPDATE operation */
-router.get('/delete/:id', requireAuth, bookController.processDeletion);
+router.get('/delete/:id', requireAuth, listController.processDeletion);
 
 module.exports = router;

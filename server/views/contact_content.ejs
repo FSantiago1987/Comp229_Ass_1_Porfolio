@@ -1,0 +1,49 @@
+ <!-- Include Defatul HTML Header -->
+<%- include partials/header.ejs %>
+<!-- Include Default Html Navigation Menu -->
+<%- include partials/main_nav.ejs %>
+
+<!-- Contact Page Content -->
+<main class="jumbotron text-center container">
+        <h1 class="jumbotron-heading">Contact</h1>
+</main>
+<div class="container contact_pg">
+  <!-- Form Contact -->
+  <form>
+    <br><h4 class="cover-heading">Get in touch 😀</h4>
+    <table>
+      	<tr>
+        <p style="color:OrangeRed;font-family:Tahoma;text-shadow:1px 1px black;margin-top:30px;font-size: 20px;"><strong>Connect With Me: </strong></p></tr>
+        <tr><ul class="socialmedia">
+              <li><a href="mailto:rawpower_br@hotmail.com" target="_blank"><img src="/assets/images/emailIon.png"></a></li>
+              <li><a href="https://twitter.com/FFlaSantiago" target="_blank"><img src="/assets/images/twitterLogo.png"></a></li>
+              <li><a href="https://www.facebook.com/fabio.santiago.96" target="_blank"><img src="/assets/images/faceLogo.png"></a></li>
+              <li><a href="https://www.instagram.com/rawpower_br/?hl=pt" target="_blank"><img src="/assets/images/instaLogo.png"></a></li>
+            </ul>
+        </tr>
+    </table>
+    <p style="color:OrangeRed;font-family:Tahoma;text-shadow:1px 1px black;font-size: 20px;margin-top:20px;"><strong>Or submit the form below: </strong></p></tr>
+    <div class="form-group">
+        <label for="lbl_name">Name</label>
+        <input type="name" class="form-control" id="inputName" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+        <label for="lbl_email">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="lbl_phone">Phone Number</label>
+      <input type="phone" class="form-control" id="inputPhone" placeholder="Enter phone number">
+    </div>
+    <div class="form-group">
+      <label for="lbl_message">Message</label>
+      <textarea class="form-control" id="inputMessage" rows="3" placeholder="Enter your message"></textarea>
+    </div>
+    <p><a class="btn blue" href="/home" role="button">Submit</a></p>
+  </form>
+</div>
+
+<!-- Include Defatul HTML Bottom -->
+<%- include partials/bottom_nav.ejs %>
+<!-- Include Defatul Footer -->
+<%- include partials/footer.ejs %>

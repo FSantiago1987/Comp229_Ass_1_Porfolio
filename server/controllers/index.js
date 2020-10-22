@@ -12,19 +12,19 @@ module.exports.displayHomePage = (req, res, next) => {
 }
 
 module.exports.displayAboutPage = (req, res, next) => {
-    res.render('index', {title: 'About', displayName: req.user ? req.user.displayName: ''});
+    res.render('about_content', {title: 'About', displayName: req.user ? req.user.displayName: ''});
 }
 
 module.exports.displayProjectsPage = (req, res, next) => {
-    res.render('index', {title: 'Projects', displayName: req.user ? req.user.displayName: ''});
+    res.render('projects_content', {title: 'Projects', displayName: req.user ? req.user.displayName: ''});
 }
 
 module.exports.displayServicesPage = (req, res, next) => {
-    res.render('index', {title: 'Services', displayName: req.user ? req.user.displayName: ''});
+    res.render('services_content', {title: 'Services', displayName: req.user ? req.user.displayName: ''});
 }
 
 module.exports.displayContactPage = (req, res, next) => {
-    res.render('index', {title: 'Contact Us', displayName: req.user ? req.user.displayName: ''});
+    res.render('contact_content', {title: 'Contact Us', displayName: req.user ? req.user.displayName: ''});
 }
 
 module.exports.displayLoginPage = (req, res, next) => {
@@ -63,7 +63,7 @@ module.exports.processLoginPage = (req, res, next) => {
             {
                 return next(err);
             }
-            return res.redirect('/book-list');
+            return res.redirect('/business-list');
         });
     })(req, res, next);
 }
@@ -117,7 +117,7 @@ module.exports.processRegisterPage = (req,res, next) => {
 
             // redirect the user and authenticate them
             return passport.authenticate('local') (req, res, () => {
-                res.redirect('/book-list');
+                res.redirect('/business-list');
             });
         }
     });
