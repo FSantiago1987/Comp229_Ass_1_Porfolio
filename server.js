@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-//process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+//process.env.NODE_ENV = 'production';
 
 var app = require('./server/config/app');
 var debug = require('debug')('assignment1:server');

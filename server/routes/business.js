@@ -18,7 +18,7 @@ function requireAuth(req, res, next)
 }
 
 /* GET Route for the Business List page */
-router.get('/', listController.displayBusinessList);
+router.get('/', requireAuth, listController.displayBusinessList);
 
 /* GET Route for displaying the Add Page page - CREATE operation */
 router.get('/add', requireAuth, listController.displayAddPage);
