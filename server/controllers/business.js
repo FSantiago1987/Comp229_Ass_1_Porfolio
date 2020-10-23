@@ -4,21 +4,17 @@ let mongoose = require('mongoose');
 
 let Business = require('../models/business');
 
-module.exports.displayBusinessList = (req, res, next) =>{
-    Business.find((err, businessList) =>{
-        if(err)
-        {
-            return console.error(err);
-        }
-        else
-        {
-            // console.log(BookList);
-            res.render('business/list', 
-            {title: 'Business Contact List', 
-            BusinessList: businessList, 
-            displayName: req.user ? req.user.displayName: ''});
-        }
-    });
+module.exports.displayBusinessList = async (req, res, next) =>{
+    try {
+        let businessList = await Business.find({})
+        .sort({name: 'asc'})  
+        res.render('business/list', 
+        {title: 'Business Contact List', 
+        BusinessList: businessList, 
+        displayName: req.user ? req.user.displayName: ''});
+    } catch (err) {
+        return console.error(err);
+    }
 };
 
 module.exports.displayAddPage = (req,res, next) => {

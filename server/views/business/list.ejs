@@ -4,11 +4,12 @@
 <%- include ../partials/main_nav.ejs %>
 
   <!-- Main Content Conditions -->
-    <main class="container">
+<div class="container">
+    <main class="jumbotron text-center">
+        <h1 class="jumbotron-heading"><%= title %></h1>
+    </main>
         <div class="row">
             <div class="col-md-offset-1 col-md-10">
-                <h1><%= title %></h1>
-
                 <% if(typeof displayName == 'string' && displayName){ %>                
                 <a href="/business-list/add" class="btn btn-primary" role="button">
                     <i class="fas fa-plus-circle"></i>Add User</a><br>
@@ -56,7 +57,7 @@
             </div>
         </div>
     </main>     
-
+</div>
 <!-- Include Defatul HTML Bottom -->
 <%- include ../partials/bottom_nav.ejs %>
 <!-- Include Defatul Footer -->
