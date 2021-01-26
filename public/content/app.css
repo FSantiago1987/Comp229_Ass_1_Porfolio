@@ -183,16 +183,16 @@ footer h6 {
 
 @media screen and (max-width: 650px) {
     .project {
-        width:280px!important; 
-        height: 180px!important; 
+        width:260px!important; 
+        height: 170px!important; 
         margin-top: 10px!important; 
-        margin-left: 30px!important;
+        margin-right: 30px!important;
         margin-bottom: 20px!important;
     }
 
     .about_pg img {
-        width: 400px!important;
-        height: 500px!important;
+        width: 350px!important;
+        height: 400px!important;
     }
 
     .about_pg p {
