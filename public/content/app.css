@@ -181,4 +181,59 @@ footer h6 {
 }
 
 
+@media screen and (max-width: 650px) {
+    .project {
+        width:320px!important; 
+        height: 200px!important; 
+        margin-top: 10px!important; 
+        margin-left: 30px!important;
+        margin-bottom: 20px!important;
+    }
+
+    .about_pg img {
+        width: 200px!important;
+        height: 300px!important;
+    }
+
+    .about_pg p {
+        font-size: 10px!important;
+    }
+    
+    .about_pg h1, .about_pg h2 {
+        font-size: 35px!important;
+    }
+
+    .resume {
+        font-size: 12px!important;
+        height: 35px!important;
+    }
+
+    .jumbotron_hp {
+        max-height: 650px!important;
+        min-height: 350px!important;
+        opacity: 0.95;
+    }
+
+    .bgimg h1, .bgimg h2 {
+        font-size: 30px!important;
+    }
+
+    .bgimg p {
+        font-size: 15px!important;
+    }
+
+    .bgimg h2 {
+        margin-top: 60px!important;
+        font-size: 20px!important;
+    }
+
+    .btn_hp  {
+        display: none;
+    }
+
+    .bgimg {
+        min-height: 0px!important;
+        max-height: 650px!important;
+    }
+}
 

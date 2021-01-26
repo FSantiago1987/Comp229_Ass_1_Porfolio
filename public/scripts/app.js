@@ -89,3 +89,15 @@ window.onload = function(){
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #C12D2D}";
     document.body.appendChild(css);
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+}
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
