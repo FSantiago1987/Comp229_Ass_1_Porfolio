@@ -209,12 +209,12 @@ footer h6 {
     }
 
     .jumbotron_hp {
-        max-height: 650px!important;
+        max-height: 700px!important;
         opacity: 0.95;
     }
 
     .bgimg h1, .bgimg h2 {
-        font-size: 50px!important;
+        font-size: 40px!important;
     }
 
     .bgimg p {
