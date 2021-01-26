@@ -118,6 +118,16 @@
 }
 
 .pj3 {
+    background: url('/assets/images/HomePage4.JPG');
+    background-size: cover;
+}
+
+.pj4 {
+    background: url('/assets/images/cim.JPG');
+    background-size: cover;
+}
+
+.pj5 {
     background: url('/assets/images/project3.jpg');
     background-size: cover;
 }
@@ -154,6 +164,13 @@
 
 .list {
     min-height: 900px!important;
+}
+
+.project {
+    width:600px!important; 
+    height: 350px!important; 
+    margin-top: 50px!important; 
+    margin-right: 20px!important;
 }
 
 
