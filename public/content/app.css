@@ -6,6 +6,28 @@
  */
 
 /* Background Image HomePage */
+/*body {
+    padding-bottom: 60px;
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+    background-image: url("../assets/images/back.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}*/
+
+.titleJumbotron {
+    background: none;
+    text-align: center;
+    height: 100px;
+    color: #daa520;
+    text-shadow: 3px 3px #818181;
+    font-size: 130px !important;
+    letter-spacing: 4px;
+    margin-bottom: 100px;
+}
+
 .bgimg {
     position: relative;
     opacity: 0.5;
@@ -13,16 +35,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/assets/images/back_hp.jpg");
-    height: 100%; 
-    min-height: 950px;
+    min-height: 700px;
     max-height: 950px;
+}
+
+.bgimg h1 {
+    font-size: 60px!important;
+    margin-top: 0!important;
 }
 
 /* Background Image Jumbotron HomePage */
 .jumbotron_hp {
     background-image: url("/assets/images/bkgd_hp.jpg");
     background-size:contain;
-    min-height: 900px;
+    min-height: 600px;
     max-height: 900px;
     opacity: 0.95;
 }
@@ -31,15 +57,38 @@
     margin-top: 30px;
 }
 
+.jumbotron_pp img {
+    height: 150px!important; 
+    padding: 0 auto
+}
+
 /* Jumbotron Min-Height About Page */
 .about_pg {
-    min-height: 900px;
+    min-height: 600px;
     max-height: 900px;
+}
+
+.about_pg p {
+    font-size: 15px!important;
+}
+
+.about_pg h1, .about_pg h2 {
+    font-size: 70px!important;
+}
+
+.about_pg img {
+    height: 500px; 
+    padding: 0 auto
 }
 
 .contact_pg {
     min-height: 1000px;
     max-height: 1000px;
+}
+
+.register_pg {
+    min-height: 600px;
+    max-height: 600px; 
 }
 
 .hello_msg {
@@ -55,7 +104,7 @@
 }
 
 .carousel{
-    height: 500px !important;
+    height: 400px !important;
 }
 
 .pj1 {
@@ -103,7 +152,9 @@
 	width:45px;
 }
 
-
+.list {
+    min-height: 900px!important;
+}
 
 
 footer h6 {

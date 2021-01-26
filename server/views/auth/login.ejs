@@ -10,7 +10,7 @@
             <%= messages %>
         </div>
     <% } %>   
-    <main class="jumbotron text-center">
+    <main class="jumbotron text-center titleJumbotron">
         <h1 class="jumbotron-heading"><%= title %></h1>
     </main>
     <div class="row">
@@ -33,9 +33,15 @@
                 <fieldset class="form-group text-right">
                     <input type="submit" class="btn btn-success" value="Login">
                     <a href="/">
-                        <input type="button" class="btn red" value="Cancel">
+                        <input type="button" class="btn orange" value="Cancel">
                     </a>
                 </fieldset>
+                <div class="divider"></div>
+                <fieldset class="form-group text-right">
+                    <a href="/auth/google" class="btn red darken-1">
+                    <i class="fab fa-google-plus-g left"></i> Log in with google
+                    </a>
+                </fieldset>                
             </form>
         </div>
     </div>
